@@ -13,7 +13,6 @@
     if (!substr.includes(s[x])) {
       substr += s[x];
       if (substr.length >= longest.length) longest = substr;
-      console.log(`current - ${substr}`)
     } else {
       substr = substr.slice(substr.indexOf(s[x])+1, x)
       if (substr !== s[x]) substr += s[x];
